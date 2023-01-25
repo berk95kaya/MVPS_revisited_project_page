@@ -1,0 +1,420 @@
+<!doctype html>
+
+<script src="https://kit.fontawesome.com/8c6b6fca0e.js" crossorigin="anonymous"></script>
+
+<!-- STYLE PART -->
+<style type="text/css">
+
+/*	body {
+		font-family: "Tahoma", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+		font-size: 16px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+		text-align: center;
+	}*/
+
+	h1 {
+		font-weight: 300;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+	}
+
+	h1.title {
+		font-weight: 300;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color:#222222;
+	}
+
+	span.conference {
+		font-size:20px;
+	}
+
+	span.authors {
+		font-size:18px;
+	}
+
+
+	h2 {
+		text-align: center;
+		font-weight: normal;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	p {
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		color:#222222;
+	}
+
+	span.abstract {
+		justify-content: center
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		color:#222222;
+		text-align: justify;
+	}
+
+.disclaimerbox {
+		background-color: #eee;
+		border: 1px solid #eeeeee;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		padding: 20px;
+	}
+
+	sup.affiliation {
+		font-size:10px;
+		color:#555555;
+	}
+	
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+
+	a:link,
+	a:visited {
+		color: #1367a7;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #208799;
+	}
+
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+
+	hr.bold {
+		border: 0;
+		height: 2px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+
+	.author_image {
+		text-align: center;
+	}
+
+</style>
+	
+<!-- HTML PART -->
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+	<title>Multi-View Photometric Stereo Revisited</title>
+	<meta property="og:image" content="" />
+	<meta property="og:title" content="Multi-View Photometric Stereo Revisited"/>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <!-- <link href="sticky-footer-navbar.css" rel="stylesheet"> -->
+</head>
+
+<!--Main page starts here-->
+<body>
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #000000;">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+   			<span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-danger" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#abstract">Abstract</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#reconstructions">Reconstructions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#presentation">Presentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#authors">Authors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#citation">Citation</a>
+          </li>            
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+  		<div class="pager-header">
+				<br>
+	    	<h1 class="title">Multi-View Photometric Stereo Revisited</h1>
+	     	<hr class="my-4">
+				<!-- Authors -->
+		  	<div class="row justify-content-md-center">
+					<div class="col-md-auto text-center">
+						<span class="authors"><a href="https://berk95kaya.github.io/">Berk Kaya</a><sup class="affiliation">1</sup></span>					
+					</div>
+					<div class="col-md-auto text-center">
+						<span class="authors"><a href="https://suryanshkumar.github.io/">Suryansh Kumar</a><sup class="affiliation">1</sup></span>					
+					</div>
+					<div class="col-md-auto text-center">
+						<span class="authors"><a href="https://ee.ethz.ch/the-department/people-a-z/person-detail.MjM1NjA3.TGlzdC8zMjc5LC0xNjUwNTg5ODIw.html">Carlos Oliveira</a><sup class="affiliation">1</sup></span>					
+					</div>
+					<div class="col-md-auto text-center">
+						<span class="authors"><a href="https://sites.google.com/view/vittoferrari">Vittorio Ferrari</a><sup class="affiliation">2</sup></span>					
+					</div>
+					<div class="col-md-auto text-center">
+						<span class="authors"><a href="https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en">Luc Van Gool</a><sup class="affiliation">1,3</sup></span>					
+					</div>
+				</div>
+  			<!-- Affiliations -->
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto text-center">
+						<span class="authors"> ETH Zurich<sup class="affiliation">1</sup></span>					
+					</div>
+					<div class="col-md-auto text-center">
+						<span class="authors">Google Research<sup class="affiliation">2</sup></span>					
+					</div>
+					<div class="col-md-auto text-center">
+						<span class="authors">KU Lueven<sup class="affiliation">3</sup></span>								
+					</div>
+				</div>
+				<br>
+				<!-- Conference -->
+				<center>	
+					<span class="conference">IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2023</span><br>
+					<span class="conference">Waikoloa - Hawaii </span>
+					</center>
+				  </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- Links -->
+	<div class="container">
+		<div class="row justify-content-md-center">
+		  <div class="col col-md-2"><center>
+		  	<a href="./images/main_paper_wacv_2023.pdf">
+	                    <i class="fa fa-file fa-2xl"></i> 
+	                </a>
+		  </div>
+	 	  <div class="col col-md-2"><center>
+	 	  	<a href="./images/supplementary_wacv_2023.pdf">
+	                    <i class="fa fa-file fa-2xl"></i> 
+	                </a>
+		  </div>
+<!--		  <div class="col col-md-2"><center>-->
+<!--		  	<a href="https://github.com/berk95kaya/UA-MVPS">-->
+<!--	                    <i class="fa fa-github fa-2xl"></i>-->
+<!--	                </a>-->
+<!--		  </div>-->
+		  <div class="col col-md-2"><center>
+		  	<a href="https://www.youtube.com/watch?v=Kqxn_tcT00M">
+	                    <i class="fa fa-youtube-play fa-2xl"></i>
+	                </a>
+		  </div>
+		  <div class="w-100"></div>
+		  <div class="col col-md-2"><center>
+		  	Paper
+		  </div>
+		  <div class="col col-md-2"><center>
+		  	Supplementary
+		  </div>
+<!--	  	  <div class="col col-md-2"><center>-->
+<!--	  	  	Code (Coming Soon)-->
+<!--		  </div>-->
+		  <div class="col col-md-2"><center>
+	  	  	Video
+		  </div>
+		</div>
+	</div>
+
+	<a class = 'anchor' name='abstract'></a><br><hr class="bold"><br>
+	
+	<!-- Abstract -->
+	<div class="container">
+		<div style="text-align: justify">
+			<h2>Abstract</h2>
+			<span class="abstract">Multi-view photometric stereo (MVPS) is a preferred method for detailed and precise 3D acquisition of an object from images. Although popular methods for MVPS can provide outstanding results, they are often complex to execute and limited to isotropic material objects. To address such limitations, we present a simple, practical approach to MVPS, which works well for isotropic as well as other object material types such as anisotropic and glossy. The proposed approach in this paper exploits the benefit of uncertainty modeling in a deep neural network for a reliable fusion of photometric stereo (PS) and multi-view stereo (MVS) network predictions. Yet, contrary to the recently proposed state-of-the-art, we introduce neural volume rendering methodology for a trustworthy fusion of MVS and PS measurements. The advantage of introducing neural volume rendering is that it helps in the reliable modeling of objects with diverse material types, where existing MVS methods, PS methods, or both may fail. Furthermore, it allows us to work on neural 3D shape representation, which has recently shown outstanding results for many geometric processing tasks. Our suggested new loss function aims to fit the zero level set of the implicit neural function using the most certain MVS and PS network predictions coupled with weighted neural volume rendering cost. The proposed approach shows state-of-the-art results when tested extensively on several benchmark datasets.</span>
+		</div>
+	</div><br><br>
+	
+	<!-- Teaser Image -->
+	<div class="container">
+		<div class="row justify-content-lg-center">
+		  <div class="col col-lg-5"><center>
+		  	<a><img src="./images/mvps_setup.png" height="250px"></img></href></a><br><span>Multi-View Photometric Stereo Setup</span><br><br>
+		  </div>
+	 	  <div class="col col-lg-5"><center>
+	 	  	<a><img src="./images/agenda.png" height="250px"></img></href></a><br><span>Benefit of our Approach</span><br><br>
+		  </div>
+		</div>
+	</div>
+	<a class = 'anchor' name='reconstructions'></a>
+	<br>
+	<hr class="bold">
+
+	<!--
+			<center>
+				<h2>Reconstructions</h2> 
+				<img src="./images/gifs/bear.gif" width="800px"><h5> BEAR </h5><br>
+				<img src="./images/gifs/buddha.gif" width="800px"><h5> BUDDHA </h5><br>
+				<img src="./images/gifs/cow.gif" width="800px"><h5> COW </h5><br>
+				<img src="./images/gifs/pot.gif" width="800px"><h5> POT2 </h5><br>
+				<img src="./images/gifs/reading.gif" width="800px"><h5> READING </h5><br>
+			</center>
+
+	<hr> -->
+
+	<h2>Reconstruction Results Comparison</h2><br>
+
+
+	<div class="container">
+		<div class="row justify-content-lg-center">
+	 	  <div class="col col-xl-12"><center>
+	 	  	<video width="900" controls autoplay muted loop>
+				<source src="./videos/video.mp4#t=2" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+<!--			  <br><span> Buddha </span><br><br>-->
+		  </div>
+		</div>
+	</div>
+
+
+	<a class = 'anchor' name='presentation'></a>
+	<br>
+	<hr class="bold">
+	<h2>Video Presentation</h2> <br>
+
+	<div class="container">
+		<div class="row justify-content-lg-center">
+	 	  <div class="col col-xl-12"><center>
+	 	  	<video width="900" controls loop>
+				<source src="./videos/wacv2023.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+<!--			  <br><span> Buddha </span><br><br>-->
+		  </div>
+		</div>
+	</div>
+
+
+
+
+	<a class = 'anchor' name='authors'></a>
+	<br>
+	<hr class="bold">
+ 	<!--Authors-->
+	<h2>Authors</h2><br>
+	<div class="container">
+		<div class="row justify-content-lg-center">
+		  <div class="col col-xl-2"><center>
+		  	<div class="author_image"><img style="height:150px" src="./images/authors/berk.jpg"><span><br>Berk Kaya</span></div>
+		  </div>
+	 	  <div class="col col-xl-2"><center>
+	 	  	<div class="author_image"><img style="height:150px" src="./images/authors/suryansh.jpg"><span><br>Suryansh Kumar</span></div>
+		  </div>
+		  <div class="col col-xl-2"><center>
+		  	<div class="author_image"><img style="height:150px" src="./images/authors/cadu.jpg"><span><br>Carlos Oliveira</span></div>
+		  </div>
+	 	  <div class="col col-xl-2"><center>
+	 	  	<div class="author_image"><img style="height:150px" src="./images/authors/vitto.png"><span><br>Vittorio Ferrari</span></div>
+			</div>	 	  
+			<div class="col col-xl-2"><center>
+	 	  	<div class="author_image"><img style="height:150px" src="./images/authors/luc.png">
+				<span><br>Luc Van Gool</span></div>	
+			</div>
+		</div>
+	</div> 
+
+	<a class = 'anchor' name='citation'></a>
+	<br>
+	<hr class="bold">
+	<h2> Citation </h2><br>
+	<div class="container">
+		<div class="row justify-content-lg-center">
+			<div class="card bg-light mb-3" style="width: 700px;">
+		 	  <div class="card-body">
+					<pre>
+@inproceedings{kaya2023multi,
+  title={Multi-View Photometric Stereo Revisited},
+  author={Kaya, Berk and Kumar, Suryansh and Oliveira, Carlos and Ferrari, Vittorio and Van Gool, Luc},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={3126--3135},
+  year={2023}
+}	     
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Acknowledgements-->
+	<a class = 'anchor' name='acknowledgements'></a>
+	<br>
+	<hr class="bold">
+	<h2>Acknowledgements</h2><br>
+	<div class="container">
+		<div class="row justify-content-lg-center">
+		  <div class="col col-xl-3"><center>
+		  	<img style="height:50px" src="./images/eth_zurich_logo.png">
+		  </div>
+	 	  <div class="col col-xl-3"><center>
+	 	  	<img style="height:50px" src="./images/cvl.png">
+		  </div>
+		  <div class="col col-xl-3"><center>
+		  	<img style="height:50px" src="./images/google_logo.png">
+		  </div>
+	 	</div>
+	</div> 
+
+
+
+	<br>
+	<p style="width:800px; text-align: justify";>
+	This work was funded by Focused Research Award from Google(CVL, ETH 2019-HE-318, 2019-HE-323, 2020-FS-351, 2020-HS-411). Suryansh Kumar's project is supported by "ETH Zurich Foundation and Google" for bringing together best academic and industrial research. </p>
+	<br><br>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+@inproceedings{kaya2023multi,
+  title={Multi-View Photometric Stereo Revisited},
+  author={Kaya, Berk and Kumar, Suryansh and Oliveira, Carlos and Ferrari, Vittorio and Van Gool, Luc},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={3126--3135},
+  year={2023}
+}
